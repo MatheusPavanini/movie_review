@@ -16,17 +16,27 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-body{
+
+
+body {
 	background: #AA4847;
 }
 
 .review_title {
-	margin: 0 0 20px 0;
+	position: relative;
+	left: 85px;
+	font-family: univers
+	
 }
-.review{
-	padding: 15px 0;
-	border-bottom: 1px solid #EAEAEA;
+
+.reviews {
+position: relative;
+	left: 85px;
+	height: 6em;
+	width: 75em; 
+	word-wrap: break-word;
 }
-.star-rating{
-	padding-bottom: 8px;
-}
+
+.star-rating {
+		padding-bottom: 8px;
+	}
