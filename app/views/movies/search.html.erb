@@ -1,0 +1,17 @@
+<% if !user_signed_in? %>
+  <div class="jumbotron">
+  <h1>Log-in before you can review movies!</h1>
+  <p>Let's review your favorite movies!</p>
+  <p><%= link_to "Sign here", new_user_registration_path, class:"btn btn-primary btn-lg" %></p>
+  </div>
+<% end %>
+<!--Renderização do index onde as imagens são linkadas ao path dos filmes "movie"-->
+<div class="row">
+  <% @movies.each do |movie| %>
+    <div class="col-sm-6 col-md-3">
+      <div class="thumbnail">
+      <%= link_to (image_tag movie.image.url(:medium), class: 'image'), movie %>
+      </div>
+    </div>
+  <% end %>
+</div>
